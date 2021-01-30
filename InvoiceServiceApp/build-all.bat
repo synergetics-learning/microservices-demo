@@ -1,0 +1,9 @@
+@echo off
+cd InvoiceServiceApp
+.\mvnw.cmd package
+cd ..\MyEurekaServiceRegistry
+.\mvnw.cmd package
+cd ..\OrderProcessingServiceApp
+.\mvnw.cmd package
+cd ..\ProductServiceApp
+.\mvnw.cmd package
